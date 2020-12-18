@@ -1,3 +1,60 @@
 // Place all the styles related to the pi-scs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.index {
+  height: 100vh;
+  width: 100vw;
+}
+
+.header {
+  // width: 100vh;
+}
+
+.header_menu {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  background-color: #0073a8;
+  height: 40px;
+  align-items: center;
+}
+
+.user_name {
+  text-decoration: none;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.list_1 {
+  text-decoration: none;
+  color: #ffffff;
+  opacity: 0.5;
+  margin-right: 20px;
+}
+
+.user_logout {
+  text-decoration: none;
+  color: #ffffff;
+  opacity: 0.5;
+  margin-right: 10px;
+}
+
+.user_login {
+  text-decoration: none;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.user_sign_in {
+  text-decoration: none;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
