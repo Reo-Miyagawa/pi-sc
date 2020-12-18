@@ -70,6 +70,29 @@
 
 .acount {
   color: #777777;
+  display: flex;
+  justify-content: center;
+}
+
+.or {
+  display: flex;
+  justify-content: center;
+}
+
+.registration_login {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  color: #0095d9;
+  border: solid 1px #ffffff;
+  margin: 0 120px 0 120px;
+  font-size: small;
+}
+
+.registration_login:hover {
+  color: #89c3eb;
+  border: solid 1px #0095d9;
+  opacity: 0.5;
 }
 
 .field {
