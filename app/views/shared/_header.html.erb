@@ -1,0 +1,19 @@
+    <div class="header">
+      <div class="nav">
+        <ul class="header_menu">
+          <% if user_signed_in? %>
+          <li class="nav-link"><%= link_to current_user.name, "#", class: "user_name" %></li>
+          <% end %>
+          <li class="header_menu_title"><%= link_to "Pi-Sc", root_path, class: "nav-link" %></li>
+          <li class="header_menu_user">
+            <% if user_signed_in? %>
+              <%= link_to 'リスト作成', "#", class: "list_1" %>
+              <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "user_logout" %>
+            <% else %>
+              <%= link_to 'ログイン', new_user_session_path, class: "user_login" %>
+              <%= link_to '新規登録', new_user_registration_path, class: "user_sign_in" %>
+            <% end %>
+          </li>
+        </ul>
+      </div>
+    </div>
