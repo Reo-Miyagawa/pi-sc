@@ -18,13 +18,13 @@ class ListsController < ApplicationController
   end
 
   def edit
-    @edit = List.find(params[:id])
+    @list = List.find(params[:id])
   end
 
   private
 
   def list_params
-    params.require(:list).permit(:title).merge(user: current_user)
+    params.require(:list).permit(:title).merge(user_id: current_user.id)
   end
 
 end
