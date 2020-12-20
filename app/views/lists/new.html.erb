@@ -1,0 +1,12 @@
+<div class="listnew">
+  <div class="container">
+    <%= form_with model: @lists, local: true do |f| %>
+      <h4 class="listnew_h">Title</h4>
+
+      <%= f.text_field :title, class: "form_listname", placeholder: "リスト名", size: 50 %>
+      <div class="text_center">
+        <%= f.submit "作成", class: "submitbtn" %>
+      </div>
+    <% end %>
+  </div>
+</div>
