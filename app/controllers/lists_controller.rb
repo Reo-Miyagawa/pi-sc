@@ -17,6 +17,9 @@ class ListsController < ApplicationController
     end
   end
 
+  def edit
+  end
+
   private
 
   def list_params
