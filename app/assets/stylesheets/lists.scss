@@ -5,6 +5,7 @@
 .index {
   height: 100vh;
   width: 100vw;
+  // background-image: url("/images/img01.png");
 }
 
 .header_menu {
@@ -12,7 +13,7 @@
   justify-content: space-between;
   list-style: none;
   background-color: #0073a8;
-  height: 40px;
+  height: 60px;
   align-items: center;
 }
 
@@ -173,4 +174,33 @@
 .text_center {
   display: flex;
   justify-content: center;
+}
+
+// ↑↑↑↑↑↑↑↑↑↑↑リスト機能↑↑↑↑↑↑↑↑↑↑↑
+
+.toppage {
+  height: calc(100vh - 70px);
+  width: 100vw;
+  overflow-x: scroll;
+}
+
+.listwrapper {
+  display: flex;
+  height: 100%;
+  align-items: baseline;
+}
+
+.list {
+  background-color: #ededed;
+  padding: 10px;
+  margin-left: 20px;
+  width: 250px;
+  opacity: 0.5;
+}
+
+.list_header {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
