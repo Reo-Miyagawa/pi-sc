@@ -5,7 +5,9 @@
       <div class="list">
         <div class="list_header"><%= list.title %></div>
         <div slass="list_header_action">
-          <%= link_to "a", edit_list_path(list.id), class: "edpen" %>
+          <%= link_to edit_list_path(list.id), class: "edpen" do %>
+            <i class="fas fa-edit"></i>
+          <% end %>
         </div>
       </div>
       <% end %>
