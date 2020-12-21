@@ -30,6 +30,10 @@ class ListsController < ApplicationController
     end
   end
 
+  def destroy
+    @list = List.find(params[:id])
+  end
+
   private
 
   def list_params
