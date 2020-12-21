@@ -7,7 +7,9 @@
           <li class="header_menu_title"><%= link_to "Pi-Sc", root_path, class: "nav-link" %></li>
           <li class="header_menu_user">
             <% if user_signed_in? %>
-              <%= link_to 'リスト作成', new_list_path, class: "list_1" %>
+              <%= link_to new_list_path, class: "list_1" do %>
+                リスト作成<i class="fas fa-edit"></i>
+              <% end %>
               <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "user_logout" %>
             <% else %>
               <%= link_to 'ログイン', new_user_session_path, class: "user_login" %>

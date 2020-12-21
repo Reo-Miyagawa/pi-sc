@@ -55,6 +55,14 @@
   opacity: 0.5;
 }
 
+.fas {
+  margin-left: 5px;
+}
+
+.despen {
+  margin-right: 5px;
+}
+
 
 // ↑↑↑↑↑↑↑↑↑↑↑共通ヘッダー↑↑↑↑↑↑↑↑↑↑↑
 
@@ -196,6 +204,8 @@
   margin-left: 20px;
   width: 250px;
   opacity: 0.5;
+  display: flex;
+  justify-content: space-between;
 }
 
 .list_header {
@@ -203,4 +213,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.edpen {
 }
